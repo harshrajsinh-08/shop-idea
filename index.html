@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sanidhya Store</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo nav">
+                <img src="assets/logo.png" alt="Logo">
+                The xyz Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Unique Secondhand Treasures</h1>
+            <p>Shop sustainably and find one-of-a-kind items.</p><br>
+            <a href="#shop" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+    <br>
+
+    <!-- Featured Categories -->
+    <section id="categories" class="featured-categories">
+        <h2>Shop by Category</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="assets/p1.webp" alt="Clothing">
+                <h3>Kurtis</h3>
+            </div>
+            <div class="category">
+                <img src="assets/p2.jpeg" alt="Accessories">
+                <h3>Designer</h3>
+            </div>
+            <div class="category">
+                <img src="assets/p3.jpeg" alt="Home Goods">
+                <h3>Rentals</h3>
+            </div>
+            <div class="category">
+                <img src="assets/p4.jpg" alt="Books">
+                <h3>Styles</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <h2>Shop Our Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="assets/p1.webp" alt="Product 1">
+                <h3>Cheeky whites</h3>
+                <p>799 INR</p>
+                <button onclick="addToCart('Cheeky whites', 799)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/p2.jpeg" alt="Product 2">
+                <h3>Olive Awesomes</h3>
+                <p>599 INR</p>
+                <button onclick="addToCart('Olive Awesomes', 599)">Add to Cart</button>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="assets/p5.jpg" alt="Product 1">
+                    <h3>Designers dream</h3>
+                    <p>999 INR</p>
+                    <button onclick="addToCart('Cheeky whites', 799)">Add to Cart</button>
+                </div>
+        </div>
+    </section>
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-details">
+            <!-- Cart details will be populated here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 xyz Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
